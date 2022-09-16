@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-center">
+                    <?php
+                    if ($session->get("success")) {
+                    ?>
+                        <div class="alert alert-success"><?= $session->get("success") ?></div>
+                    <?php
+                        $session->remove("success");
+                    }
+                    ?>
+                </div>
